@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>ICT EX4 - Length Coverter</title>
+
+</head onload="alert('Type in any number in the box and it will bring out a result.')">
+<body class="bg-success">
+
+<h2>JavaScript Length Converter</h2>
+<hr>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Ft." oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p style="color: skyblue;">Miles= <span id="outputMiles"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputMiles").innerHTML=valNum*0.00018939;
+}
+</script>
+</body>
+</html>
